@@ -1,0 +1,39 @@
+.topbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #BF8A49;
+    height: 3.5rem;
+}
+
+.topbar > img {
+    margin-top: 8px;
+}
+
+.topbar > h2 {
+    margin-top: 12px;
+    cursor: default;
+}
+
+.topbar-navigation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-left: auto;
+}
+
+.topbar-link {
+    color: aliceblue;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: color 0.25s linear;
+}
+
+.topbar-link:hover {
+    color: #1F70BF;
+}
+
+@media screen and (max-width: 512px) {
+    .topbar > h2 {
+        display: none;
+    }
+}

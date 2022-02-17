@@ -1,0 +1,38 @@
+.timer-container {
+    margin: 3rem;
+    text-align: center;
+}
+
+.timer-time {
+    font-size: 100px;
+}
+
+@media screen and (max-width: 812px) and (min-width: 512px) {
+    .timer-time {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .timer-time {
+        font-size: 32px;
+    }
+}
+
+.timer-desc {
+    float: right;
+}
+
+.title {
+    margin-top: 3rem;
+    border-top: 1px solid #aaa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+}
+
+.title legend {
+    padding: 5px 10px;
+}

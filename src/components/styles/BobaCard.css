@@ -1,0 +1,44 @@
+.bobacard {
+    margin: 2rem 2rem 2rem 2rem;
+    box-shadow: none;
+    transition: box-shadow 0.25s linear; 
+}
+
+.bobacard:hover {
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+.bobacard-responsive {
+    display: flex;
+    flex-direction: row;
+}
+
+.bobacard-extra {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 813px) {
+    .bobacard-phone {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .bobacard {
+        margin: 2rem 1rem;
+    }
+
+    .bobacard-responsive p:nth-child(-n+3) {
+        display: none;
+    }
+
+    .bobacard-responsive img:nth-child(1) {
+        display: none !important;
+    }
+
+    .bobacard-responsive img:nth-child(3) {
+        margin: 0 3px 4px 0 !important;
+    }
+}

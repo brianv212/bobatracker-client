@@ -1,0 +1,20 @@
+.home {
+    /* background-color: #BF8A49; */
+    margin: 0 3rem 0 3rem;
+    text-align: center;
+}
+
+.home-button {
+    border: none;
+    background-color: #BF8A49;
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+    margin-bottom: 5rem;
+}
+
+.home-button:hover {
+    background-color: #bf8a498e;
+}

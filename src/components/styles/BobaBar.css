@@ -1,0 +1,35 @@
+.bar-group .name-label {
+    text-anchor: end;
+    font-weight: 300;
+    font-size: 1em;
+    fill: #333;
+}
+
+.bar-group {
+    transition: opacity 0.25s;
+}
+  
+.bar-group .value-label {
+    text-anchor: end;
+    fill: black;
+    font-weight: 900;
+    font-size: 0.7em;
+}
+
+.bar {
+    cursor: pointer
+}
+
+/* Fade bars when the chart is hovered */
+.container:hover .bar-group {
+    opacity: 0.3;
+}
+  
+/* But don't fade the hovered bar... */
+.container .bar-group:hover {
+    opacity: 1;
+}
+
+.container .bar-group:hover .name-label {
+    font-weight: 400;
+}

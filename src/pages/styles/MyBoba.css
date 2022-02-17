@@ -1,0 +1,42 @@
+.boba-container {
+    overflow: hidden;
+}
+
+.boba-data {
+    margin: 2rem 4rem;
+    height: 65vh;
+    overflow-y: scroll;
+    background-color: #BF8A49;
+    border-radius: 10px;
+}
+
+.boba-data::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 812px) {
+    .boba-data {
+        margin: 2rem 1rem;
+    }
+}
+
+.quote-container {
+    background-color: #D5F2F9;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.quote-container h1 {
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+.quote-container h4 {
+    font-style: italic;
+}
+
+.data-container {
+    background-color: #BF8A49;
+    padding-bottom: 2rem;
+}
+
+/* #D5F2F9 */

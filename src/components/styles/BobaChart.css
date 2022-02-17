@@ -1,0 +1,15 @@
+.barchart-title {
+    margin: auto;
+}
+
+.barchart {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 812px) {
+    .barchart {
+        width: 100%;
+    }
+}
