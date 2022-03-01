@@ -17,14 +17,22 @@ function MyBoba() {
     // userId === user.id
     // const { userId } = useParams();
     // console.log(userId)
+    const navigate = useNavigate();
     const { user } = useContext(AuthContext);
+    useEffect(() => {
+        if (!user) {
+            navigate('/');
+        }
+    })
+
     const userId = user.id
+    console.log(user)
 
     const {data} = 
         useQuery(FETCH_USER_BOBA, {
             variables: {
-                userId
-        }
+                userId: userId
+            }
     });
 
     const quotes = [
