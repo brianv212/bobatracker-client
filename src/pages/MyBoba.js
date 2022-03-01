@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext,useEffect} from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 // import {useParams} from 'react-router-dom';
@@ -6,6 +6,7 @@ import {AuthContext} from '../context/auth';
 import BobaCard from '../components/BobaCard';
 import BobaChart from '../components/BobaChart';
 import moment from 'moment';
+import { useNavigate } from 'react-router-dom';
 import GridLoader from "react-spinners/GridLoader";
 
 
